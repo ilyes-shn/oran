@@ -7,20 +7,20 @@ import About from './pages/About'
 
 function App() {
   return (
+    <Router>
     <Layout>
     <div class="container">
-      <Router>
         <Switch>
-          <Route to='/'>
+          <Route path='/'>
             <Home />
           </Route>    
-          <Route to='/about'>
+          <Route path='/about'>
             <About/>
           </Route>      
         </Switch>
-      </Router>
     </div>
     </Layout>
+    </Router>
   );
 }
 

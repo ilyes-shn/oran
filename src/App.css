@@ -3,5 +3,9 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     color: white;
+    overflow: hidden;
 }
 
+hr {
+    background-color: white;
+}

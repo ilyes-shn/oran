@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
     <Layout>
-    <div class="container mt-5">
+    <div className="container mt-5">
         <Switch>
           <Route exact path='/'>
             <Home />

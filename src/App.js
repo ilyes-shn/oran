@@ -1,26 +1,31 @@
 import React from 'react';
-import './App.css';
+import '../src/styles/App.css';
 import Layout from './components/Layout';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About' 
 
+
 function App() {
+
+
   return (
-    <Router>
+    
+    
     <Layout>
     <div className="container mt-5">
         <Switch>
           <Route exact path='/'>
             <Home />
           </Route>    
-          <Route path='/about'>
+          <Route exact path='/about'>
             <About/>
           </Route>      
         </Switch>
     </div>
     </Layout>
-    </Router>
+   
+    
   );
 }
 

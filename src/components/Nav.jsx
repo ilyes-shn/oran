@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const Nav = () => {
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark ">
+        <motion.nav initial={{ y: '-200%'}} animate={{ y: 0}}  className="navbar navbar-expand-sm navbar-dark ">
             <Link className="navbar-brand" to="/">Elyes</Link>
             <button className="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +22,7 @@ const Nav = () => {
                 </ul>
                 
             </div>
-        </nav>
+        </motion.nav>
     )
 }
 

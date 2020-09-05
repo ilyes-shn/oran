@@ -1,0 +1,21 @@
+::-webkit-scrollbar {
+    background-image: linear-gradient(to bottom, #85203b, #cb3b3b);
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+background-image: linear-gradient(to bottom, #e0c45c, #fff98c);
+border-radius: 20px;
+}
+
+
+body {
+ background-image: linear-gradient(120deg, #85203b, #cb3b3b);
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+

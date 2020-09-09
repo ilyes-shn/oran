@@ -11,9 +11,9 @@ function App() {
 
   return (
     
-    
+    <div className="App">
     <Layout>
-    <div className="container mt-5">
+    <div className="container pt-5">
         <Switch>
           <Route exact path='/'>
             <Home />
@@ -24,6 +24,7 @@ function App() {
         </Switch>
     </div>
     </Layout>
+    </div>
    
     
   );

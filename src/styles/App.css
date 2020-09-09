@@ -1,3 +1,40 @@
+::-webkit-scrollbar {
+    background-image: linear-gradient(to bottom, #85203b, #cb3b3b);
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom,#cb3b3b, #e0c45c, #fff98c);
+    border-radius: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #85203b, #cb3b3b);
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+    max-height: max-content;
+}
+
+
+
+.About {
+   
+    min-height: 100vh;
+}
+
+.Home {
+    
+    min-height: 100vh;
+    
+}
 
 hr {
     background-color: white;

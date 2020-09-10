@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-    background-image: linear-gradient(to bottom, #85203b, #cb3b3b);
+    background-color: #85203b;
     width: 8px;
 }
 
@@ -26,14 +26,14 @@ body {
 
 
 .About {
-   
+
     min-height: 100vh;
 }
 
 .Home {
-    
+
     min-height: 100vh;
-    
+
 }
 
 hr {

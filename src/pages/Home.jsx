@@ -8,7 +8,9 @@ const [comment,setComment] = useState('')
 const [items,setItems] = useState([]);
 
 function addItem() {
-    setItems([...items,comment])
+    if (comment !== ''){
+        setItems([...items,comment])
+    }
     setComment('')
 }
     return (
@@ -16,7 +18,7 @@ function addItem() {
             <form>
                 <label htmlFor="post" style={{ opacity: 0.6}}>Write a comment</label>
                 <br/>
-                <input value={comment} onChange={ (e) => setComment(e.currentTarget.value)} type="text" name='post' style={{ width: '50%',fontSize: 19, background: 'transparent', outline: 'none', border: 'none', borderBottom: '1px solid grey',padding: 10, color: 'white'}} />
+                <input required value={comment} onChange={ (e) => setComment(e.currentTarget.value)} type="text" name='post' style={{ width: '50%',fontSize: 19, background: 'transparent', outline: 'none', border: 'none', borderBottom: '1px solid grey',padding: 10, color: 'white'}} />
                 <br/>
                 <button onClick={addItem} type='button' style={{padding: '10px 0', color: 'white', outline: 'none', border: 'none', backgroundColor: '#17b978', width: 100, margin: '10px 0', borderRadius: 10 }}>Add</button>
                 {items.map((item) => { return (
